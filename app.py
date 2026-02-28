@@ -78,7 +78,7 @@ rag_chain = (
 )
 
 # Streamlit UI
-st.image("https://innomatics.in/wp-content/uploads/2023/01/innomatics-footer-logo.png")
+
 
 query = st.text_input("Enter your question")
 
@@ -87,4 +87,5 @@ if st.button("Predict"):
         response = rag_chain.invoke(query)
         st.write(response)
     else:
+
         st.write("Please enter a question.")
